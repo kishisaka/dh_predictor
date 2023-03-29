@@ -1,7 +1,8 @@
+import predictor
 from person import Person
 
 
-class Predictor:
+class DatahousePredictor(predictor.Predictor):
 
     def predict(self, applicant: Person):
         return (applicant.attributes.endurance +
